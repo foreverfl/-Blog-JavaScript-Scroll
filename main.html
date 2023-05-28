@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @import url("style.css");
+  </style>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav id="navbar">
+        <img id="menu" src="images/menu.png" />
+        <div id="sidebar"></div>
+        <a id="navbarTitle"></a>
+        <div id="profileBox">
+          <img id="profile" src="images/profile.png" />
+          <div id="openedProfile">
+            <section class="section">프로필 사진 확대</section>
+            <section class="section">방문자수</section>
+          </div>
+        </div>
+      </nav>
+      <div id="scrollIndicator"></div>
+    </div>
+
+    <div id="header">
+      <div id="title">02. 자바스크립트란?</div>
+      <div id="dateAndCategory">
+        <span id="date">2023.05.01 04:54</span>
+        <span>&nbsp;&nbsp; |&nbsp;&nbsp; </span>
+        <span id="category">Javascript</span>
+      </div>
+    </div>
+    <div id="text">
+      <p class="subtitle">(1) 자바스크립트의 탄생</p>
+      <p class="content">
+        자바스크립트는 1995년 브랜던 아이크(Brendan Eich)에 의해 개발되었습니다.
+        초기에는 웹 페이지에 간단한 동적 기능을 추가하기 위한 목적으로
+        만들어졌습니다. 이때의 목표는 웹 페이지에 상호작용성을 부여하여
+        사용자와의 인터랙션을 강화하는 것이었습니다. 자바스크립트의 등장으로 웹
+        개발에서는 단순한 정적인 HTML 문서가 아닌 동적이고 생동감 있는 웹 페이지
+        개발이 가능해졌습니다. 이를 통해 사용자들은 보다 다양하고 흥미로운 웹
+        경험을 할 수 있게 되었고, 웹의 발전과 함께 자바스크립트는 점차적으로
+        성장하고 발전해오면서 현재의 다양한 웹 애플리케이션 및 기술 생태계를
+        구축하는 핵심 언어로 자리잡게 되었습니다.
+      </p>
+
+      <p class="subtitle">(2) 자바스크립트의 표준화</p>
+      <p class="content">
+        자바스크립트는 초기에 각 웹 브라우저마다 독자적인 구현이 이루어졌기
+        때문에 표준화의 필요성이 대두되었습니다. 이를 위해 ECMA 인터내셔널(Ecma
+        International)에서 표준화 작업을 시작하였고, 이후 ECMAScript라는 표준
+        스펙이 등장하였습니다. ECMAScript는 자바스크립트의 공식적인 표준
+        스펙으로 사용되며, 버전별로 업데이트와 개선이 이루어지고 있습니다.
+      </p>
+
+      <p class="subtitle">(3) 자바스크립트 성장의 역사</p>
+      <p class="content">
+        자바스크립트는 웹 기술의 발전과 함께 지속적인 성장을 거듭해왔습니다.
+        2000년대 초반에는 Ajax(Asynchronous JavaScript and XML)라는 개념이
+        도입되어 웹 애플리케이션의 비동기 통신이 가능해졌습니다. 이후 jQuery와
+        같은 라이브러리가 등장하여 개발자들이 자바스크립트를 더욱 편리하게
+        사용할 수 있게 되었습니다. 또한, V8 자바스크립트 엔진의 등장은
+        자바스크립트의 성능 향상과 함께 Node.js와 같은 서버 사이드 개발 환경의
+        등장을 이끌었습니다. 최근에는 SPA(Single Page Application)
+        프레임워크들이 활성화되어 웹 애플리케이션의 사용자 경험을 향상시키는 등,
+        자바스크립트의 성장은 계속되고 있습니다.
+      </p>
+
+      <p class="subtitle">(4) 자바스크립트와 ECMAScript</p>
+      <p class="content">
+        자바스크립트는 ECMAScript의 구현체 중 하나입니다. ECMAScript는
+        자바스크립트의 공식 표준이며, 버전별로 새로운 기능과 문법이 추가됩니다.
+        일반적으로 자바스크립트라고 언급하면 ECMAScript를 가리키는 경우가
+        많습니다. 따라서 ECMAScript 버전의 업데이트는 자바스크립트의 발전과
+        밀접한 관련이 있습니다.
+      </p>
+
+      <p class="subtitle">(5) 자바스크립트의 특징</p>
+      <p class="content">
+        자바스크립트는 동적인 타입 시스템, 프로토타입 기반의 객체 지향
+        프로그래밍, 클로저, 함수형 프로그래밍 등의 특징을 가지고 있습니다. 또한,
+        웹 브라우저에서 실행되는 클라이언트 사이드 스크립트 언어로 주로
+        사용되지만, Node.js와 같은 환경에서는 서버 사이드 개발에도 활용됩니다.
+        이러한 다양한 특징으로 인해 자바스크립트는 많은 개발자들에게 사랑받고
+        있으며, 웹 개발뿐만 아니라 모바일 애플리케이션, 게임 등 다양한
+        분야에서도 활용되고 있습니다.
+      </p>
+
+      <p class="subtitle">(6) ES6 브라우저 지원 현황</p>
+      <p class="content">
+        ES6(ECMAScript 2015)은 ECMAScript의 버전 중 하나로, 자바스크립트에 많은
+        새로운 기능과 문법이 도입되었습니다. 현재 대부분의 최신 브라우저들은
+        ES6의 대부분의 기능을 지원하고 있으나, 오래된 브라우저나 특정 환경에서는
+        일부 기능이 지원되지 않을 수 있습니다. 따라서 개발자는 대상 환경의
+        브라우저 지원 현황을 확인하고 적절한 트랜스파일러(transpiler)나
+        폴리필(polyfill)을 사용하여 ES6 코드를 호환 가능한 코드로 변환해야 할
+        수도 있습니다.
+      </p>
+
+      <p class="subtitle">(1) 자바스크립트의 탄생</p>
+      <p class="content">
+        자바스크립트는 1995년 브랜던 아이크(Brendan Eich)에 의해 개발되었습니다.
+        초기에는 웹 페이지에 간단한 동적 기능을 추가하기 위한 목적으로
+        만들어졌습니다. 이때의 목표는 웹 페이지에 상호작용성을 부여하여
+        사용자와의 인터랙션을 강화하는 것이었습니다. 자바스크립트의 등장으로 웹
+        개발에서는 단순한 정적인 HTML 문서가 아닌 동적이고 생동감 있는 웹 페이지
+        개발이 가능해졌습니다. 이를 통해 사용자들은 보다 다양하고 흥미로운 웹
+        경험을 할 수 있게 되었고, 웹의 발전과 함께 자바스크립트는 점차적으로
+        성장하고 발전해오면서 현재의 다양한 웹 애플리케이션 및 기술 생태계를
+        구축하는 핵심 언어로 자리잡게 되었습니다.
+      </p>
+
+      <p class="subtitle">(2) 자바스크립트의 표준화</p>
+      <p class="content">
+        자바스크립트는 초기에 각 웹 브라우저마다 독자적인 구현이 이루어졌기
+        때문에 표준화의 필요성이 대두되었습니다. 이를 위해 ECMA 인터내셔널(Ecma
+        International)에서 표준화 작업을 시작하였고, 이후 ECMAScript라는 표준
+        스펙이 등장하였습니다. ECMAScript는 자바스크립트의 공식적인 표준
+        스펙으로 사용되며, 버전별로 업데이트와 개선이 이루어지고 있습니다.
+      </p>
+
+      <p class="subtitle">(3) 자바스크립트 성장의 역사</p>
+      <p class="content">
+        자바스크립트는 웹 기술의 발전과 함께 지속적인 성장을 거듭해왔습니다.
+        2000년대 초반에는 Ajax(Asynchronous JavaScript and XML)라는 개념이
+        도입되어 웹 애플리케이션의 비동기 통신이 가능해졌습니다. 이후 jQuery와
+        같은 라이브러리가 등장하여 개발자들이 자바스크립트를 더욱 편리하게
+        사용할 수 있게 되었습니다. 또한, V8 자바스크립트 엔진의 등장은
+        자바스크립트의 성능 향상과 함께 Node.js와 같은 서버 사이드 개발 환경의
+        등장을 이끌었습니다. 최근에는 SPA(Single Page Application)
+        프레임워크들이 활성화되어 웹 애플리케이션의 사용자 경험을 향상시키는 등,
+        자바스크립트의 성장은 계속되고 있습니다.
+      </p>
+
+      <p class="subtitle">(4) 자바스크립트와 ECMAScript</p>
+      <p class="content">
+        자바스크립트는 ECMAScript의 구현체 중 하나입니다. ECMAScript는
+        자바스크립트의 공식 표준이며, 버전별로 새로운 기능과 문법이 추가됩니다.
+        일반적으로 자바스크립트라고 언급하면 ECMAScript를 가리키는 경우가
+        많습니다. 따라서 ECMAScript 버전의 업데이트는 자바스크립트의 발전과
+        밀접한 관련이 있습니다.
+      </p>
+
+      <p class="subtitle">(5) 자바스크립트의 특징</p>
+      <p class="content">
+        자바스크립트는 동적인 타입 시스템, 프로토타입 기반의 객체 지향
+        프로그래밍, 클로저, 함수형 프로그래밍 등의 특징을 가지고 있습니다. 또한,
+        웹 브라우저에서 실행되는 클라이언트 사이드 스크립트 언어로 주로
+        사용되지만, Node.js와 같은 환경에서는 서버 사이드 개발에도 활용됩니다.
+        이러한 다양한 특징으로 인해 자바스크립트는 많은 개발자들에게 사랑받고
+        있으며, 웹 개발뿐만 아니라 모바일 애플리케이션, 게임 등 다양한
+        분야에서도 활용되고 있습니다.
+      </p>
+
+      <p class="subtitle">(6) ES6 브라우저 지원 현황</p>
+      <p class="content">
+        ES6(ECMAScript 2015)은 ECMAScript의 버전 중 하나로, 자바스크립트에 많은
+        새로운 기능과 문법이 도입되었습니다. 현재 대부분의 최신 브라우저들은
+        ES6의 대부분의 기능을 지원하고 있으나, 오래된 브라우저나 특정 환경에서는
+        일부 기능이 지원되지 않을 수 있습니다. 따라서 개발자는 대상 환경의
+        브라우저 지원 현황을 확인하고 적절한 트랜스파일러(transpiler)나
+        폴리필(polyfill)을 사용하여 ES6 코드를 호환 가능한 코드로 변환해야 할
+        수도 있습니다.
+      </p>
+
+      <p class="subtitle">(1) 자바스크립트의 탄생</p>
+      <p class="content">
+        자바스크립트는 1995년 브랜던 아이크(Brendan Eich)에 의해 개발되었습니다.
+        초기에는 웹 페이지에 간단한 동적 기능을 추가하기 위한 목적으로
+        만들어졌습니다. 이때의 목표는 웹 페이지에 상호작용성을 부여하여
+        사용자와의 인터랙션을 강화하는 것이었습니다. 자바스크립트의 등장으로 웹
+        개발에서는 단순한 정적인 HTML 문서가 아닌 동적이고 생동감 있는 웹 페이지
+        개발이 가능해졌습니다. 이를 통해 사용자들은 보다 다양하고 흥미로운 웹
+        경험을 할 수 있게 되었고, 웹의 발전과 함께 자바스크립트는 점차적으로
+        성장하고 발전해오면서 현재의 다양한 웹 애플리케이션 및 기술 생태계를
+        구축하는 핵심 언어로 자리잡게 되었습니다.
+      </p>
+
+      <p class="subtitle">(2) 자바스크립트의 표준화</p>
+      <p class="content">
+        자바스크립트는 초기에 각 웹 브라우저마다 독자적인 구현이 이루어졌기
+        때문에 표준화의 필요성이 대두되었습니다. 이를 위해 ECMA 인터내셔널(Ecma
+        International)에서 표준화 작업을 시작하였고, 이후 ECMAScript라는 표준
+        스펙이 등장하였습니다. ECMAScript는 자바스크립트의 공식적인 표준
+        스펙으로 사용되며, 버전별로 업데이트와 개선이 이루어지고 있습니다.
+      </p>
+
+      <p class="subtitle">(3) 자바스크립트 성장의 역사</p>
+      <p class="content">
+        자바스크립트는 웹 기술의 발전과 함께 지속적인 성장을 거듭해왔습니다.
+        2000년대 초반에는 Ajax(Asynchronous JavaScript and XML)라는 개념이
+        도입되어 웹 애플리케이션의 비동기 통신이 가능해졌습니다. 이후 jQuery와
+        같은 라이브러리가 등장하여 개발자들이 자바스크립트를 더욱 편리하게
+        사용할 수 있게 되었습니다. 또한, V8 자바스크립트 엔진의 등장은
+        자바스크립트의 성능 향상과 함께 Node.js와 같은 서버 사이드 개발 환경의
+        등장을 이끌었습니다. 최근에는 SPA(Single Page Application)
+        프레임워크들이 활성화되어 웹 애플리케이션의 사용자 경험을 향상시키는 등,
+        자바스크립트의 성장은 계속되고 있습니다.
+      </p>
+
+      <p class="subtitle">(4) 자바스크립트와 ECMAScript</p>
+      <p class="content">
+        자바스크립트는 ECMAScript의 구현체 중 하나입니다. ECMAScript는
+        자바스크립트의 공식 표준이며, 버전별로 새로운 기능과 문법이 추가됩니다.
+        일반적으로 자바스크립트라고 언급하면 ECMAScript를 가리키는 경우가
+        많습니다. 따라서 ECMAScript 버전의 업데이트는 자바스크립트의 발전과
+        밀접한 관련이 있습니다.
+      </p>
+
+      <p class="subtitle">(5) 자바스크립트의 특징</p>
+      <p class="content">
+        자바스크립트는 동적인 타입 시스템, 프로토타입 기반의 객체 지향
+        프로그래밍, 클로저, 함수형 프로그래밍 등의 특징을 가지고 있습니다. 또한,
+        웹 브라우저에서 실행되는 클라이언트 사이드 스크립트 언어로 주로
+        사용되지만, Node.js와 같은 환경에서는 서버 사이드 개발에도 활용됩니다.
+        이러한 다양한 특징으로 인해 자바스크립트는 많은 개발자들에게 사랑받고
+        있으며, 웹 개발뿐만 아니라 모바일 애플리케이션, 게임 등 다양한
+        분야에서도 활용되고 있습니다.
+      </p>
+
+      <p class="subtitle">(6) ES6 브라우저 지원 현황</p>
+      <p class="content">
+        ES6(ECMAScript 2015)은 ECMAScript의 버전 중 하나로, 자바스크립트에 많은
+        새로운 기능과 문법이 도입되었습니다. 현재 대부분의 최신 브라우저들은
+        ES6의 대부분의 기능을 지원하고 있으나, 오래된 브라우저나 특정 환경에서는
+        일부 기능이 지원되지 않을 수 있습니다. 따라서 개발자는 대상 환경의
+        브라우저 지원 현황을 확인하고 적절한 트랜스파일러(transpiler)나
+        폴리필(polyfill)을 사용하여 ES6 코드를 호환 가능한 코드로 변환해야 할
+        수도 있습니다.
+      </p>
+    </div>
+  </body>
+  <script>
+    const menuButton = document.querySelector("#menu");
+    const menuItems = document.querySelectorAll("#menuItems li a");
+    const sidebar = document.querySelector("#sidebar");
+    const container = document.querySelector("#container");
+
+    menuButton.addEventListener("click", function () {
+      loadSidebar();
+    });
+
+    function loadSidebar() {
+      const container = document.getElementById("container");
+      const sidebar = document.getElementById("sidebar");
+      const content = document.getElementById("content");
+
+      if (sidebar.style.display === "" || sidebar.style.display === "none") {
+        fetch("sidebar.html")
+          .then((response) => response.text())
+          .then((html) => {
+            sidebar.innerHTML = html;
+            sidebar.style.display = "block";
+            console.log("block처리됨ㅋ");
+          });
+      } else {
+        sidebar.style.display = "none";
+      }
+    }
+
+    menuItems.forEach((item) => {
+      item.addEventListener("mouseenter", function () {
+        this.style.cursor = "pointer";
+      });
+
+      item.addEventListener("mouseleave", function () {
+        this.style.cursor = "auto";
+      });
+    });
+
+    const profile = document.querySelector("#profile");
+    profile.addEventListener("click", function () {
+      alert("프로필이 클릭되었습니다.");
+    });
+
+    // 가로 스크롤 이벤트
+    window.addEventListener("scroll", function () {
+      const scrollIndicator = document.getElementById("scrollIndicator");
+      const navbar = document.getElementById("navbar");
+      // 스크롤 백분율 = 현재 스크롤 위치 / 문서 전체의 높이 - 보이는 창의 높이
+      const scrollPercentage =
+        (window.scrollY /
+          (document.documentElement.scrollHeight - window.innerHeight)) *
+        100;
+      scrollIndicator.style.width = scrollPercentage + "%";
+
+      // scrollIndicator의 상단 위치를 네비게이션 바 아래로 조정
+      scrollIndicator.style.top = navbar.offsetHeight + "px";
+    });
+  </script>
+</html>
